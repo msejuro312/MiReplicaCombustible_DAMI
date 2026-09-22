@@ -1,0 +1,11 @@
+<resources>
+    <color name="azul_oscuro">#12304A</color>
+    <color name="azul_principal">#176B87</color>
+    <color name="turquesa">#36A9A1</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="blanco_suave">#EDF9F8</color>
+    <color name="gris_texto">#506170</color>
+    <color name="gris_borde">#C7D8DC</color>
+    <color name="superficie">#F3FAF9</color>
+    <color name="estado_fondo">#D5F0EC</color>
+</resources>

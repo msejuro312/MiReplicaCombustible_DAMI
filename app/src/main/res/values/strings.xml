@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">MiReplicaCombustible</string>
+    <string name="titulo_principal">Calculadora de Rendimiento</string>
+    <string name="subtitulo_principal">Ingrese el nombre, la distancia recorrida y los litros de combustible para conocer el rendimiento.</string>
+    <string name="seccion_datos">Datos del conductor</string>
+    <string name="formula_rendimiento">El rendimiento se obtiene dividiendo la distancia recorrida entre los litros de combustible.</string>
+    <string name="hint_nombre">Nombre</string>
+    <string name="hint_distancia">Distancia recorrida</string>
+    <string name="hint_litros">Combustible utilizado</string>
+    <string name="unidad_kilometros">km</string>
+    <string name="unidad_litros">L</string>
+    <string name="boton_calcular">Calcular rendimiento</string>
+    <string name="boton_volver">Realizar otro cálculo</string>
+    <string name="error_nombre">Ingrese su nombre</string>
+    <string name="error_distancia">Ingrese una distancia válida mayor que cero</string>
+    <string name="error_litros">Ingrese un combustible válido mayor que cero</string>
+    <string name="resultado_titulo">Resultado del cálculo</string>
+    <string name="resultado_descripcion">Esta información fue enviada desde la pantalla anterior.</string>
+    <string name="resultado_nombre_inicial">Nombre no disponible</string>
+    <string name="resultado_rendimiento_inicial">Rendimiento: 0.00 km/L</string>
+    <string name="resultado_nombre_formato">Resultado de %1$s</string>
+    <string name="resultado_rendimiento_formato">Rendimiento: %1$.2f km/L</string>
+    <string name="resultado_nota">El rendimiento es una referencia y depende de las condiciones de manejo y del vehículo.</string>
+    <string name="valor_no_disponible">No disponible</string>
+    <string name="clasificacion_rendimiento_bajo">Rendimiento bajo</string>
+    <string name="clasificacion_rendimiento_medio">Rendimiento medio</string>
+    <string name="clasificacion_buen_rendimiento">Buen rendimiento</string>
+    <string name="clasificacion_rendimiento_excelente">Rendimiento excelente</string>
+</resources>

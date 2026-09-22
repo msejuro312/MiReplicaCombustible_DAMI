@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/screen_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_panel_hero"
+            android:orientation="vertical"
+            android:padding="@dimen/card_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo_principal"
+                android:textColor="@color/blanco"
+                android:textSize="@dimen/text_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_gap_small"
+                android:text="@string/subtitulo_principal"
+                android:textColor="@color/blanco_suave"
+                android:textSize="@dimen/text_body" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/section_gap"
+            android:background="@drawable/bg_surface_panel"
+            android:orientation="vertical"
+            android:padding="@dimen/card_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/seccion_datos"
+                android:textColor="@color/azul_oscuro"
+                android:textSize="@dimen/text_section"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_gap_small"
+                android:text="@string/formula_rendimiento"
+                android:textColor="@color/gris_texto"
+                android:textSize="@dimen/text_body" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputLayoutNombre"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/section_gap"
+                android:hint="@string/hint_nombre">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="personName"
+                    android:inputType="textCapWords" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputLayoutDistancia"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_gap"
+                android:hint="@string/hint_distancia"
+                app:suffixText="@string/unidad_kilometros">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextDistancia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:importantForAutofill="no"
+                    android:inputType="numberDecimal" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputLayoutLitros"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_gap"
+                android:hint="@string/hint_litros"
+                app:suffixText="@string/unidad_litros">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextLitros"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:importantForAutofill="no"
+                    android:inputType="numberDecimal" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonCalcular"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginTop="@dimen/section_gap"
+                android:text="@string/boton_calcular"
+                android:textAllCaps="false"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
